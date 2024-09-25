@@ -1,0 +1,33 @@
+{
+    "name": "wecomstore/admin-image",
+    "description": "The admin Image Package",
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "aler.gl",
+            "email": "974291@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0.0",
+        "ext-gd": "*"
+    },
+    "require-dev": {
+        "topthink/framework": "^8.0"
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "autoload": {
+        "psr-4": {
+            "wecomstore\\": "src"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "wecomstore\\ImageService"
+            ]
+        }
+    }
+}
